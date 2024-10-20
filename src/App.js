@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Card from './components/Card/Card'
+import { data } from "./data"
 
 function App() {
+  let [isLight, switchTheme] = useState(true)
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Header</h1>
       </header>
+      <main className="main">
+        {
+          data.map((resource) => (
+            <Card key={resource.id} name={resource.name} description={resource.description} link={resource.link} isLight={isLight} />
+          ))
+        }
+        <button onClick={() => { switchTheme(!isLight) }}>Switch Theme</button>
+      </main>
     </div>
   );
 }
+
 
 export default App;

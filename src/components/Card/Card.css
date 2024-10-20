@@ -1,0 +1,43 @@
+.Card {
+  width: 100%;
+  min-width: 185px;
+  flex-basis: 25%;
+  padding: 20px;
+  overflow: hidden;
+
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.Card-lightmode {
+  background-color: #f4f4f4;
+  color: inherit;
+}
+
+.Card-darkmode {
+  background-color: rgb(29, 29, 29);
+  color: white;
+
+}
+
+.Card-darkmode * {
+  color: white
+}
+
+.Card>a {
+  align-self: flex-end;
+}
+
+.minimized {
+  max-height: 25px;
+}
+
+
+.maximized {
+  max-height: 200px;
+}
