@@ -13,7 +13,7 @@ function Card({ name, description, link, isLight }) {
     <div className={"Card Card-" + ((isLight) ? "lightmode" : "darkmode") + (isMaximized ? " maximized" : " minimized")} tabIndex="0" onClick={handleClick}>
       <h3>{name}</h3>
       <p>{description}</p>
-      <a href={link}>{'<'} {name.toLowerCase()} docs {'>'}</a>
+      <a href={link} target="_blank" rel="noreferrer">{'<'} {name.toLowerCase()} docs {'>'}</a>
     </div>
   )
 }

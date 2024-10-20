@@ -7,8 +7,8 @@ function App() {
   let [isLight, switchTheme] = useState(true)
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className={"App " + (isLight ? "light" : "dark")}>
+      <header className="App-header" >
         <h1>Header</h1>
       </header>
       <main className="main">
@@ -17,9 +17,9 @@ function App() {
             <Card key={resource.id} name={resource.name} description={resource.description} link={resource.link} isLight={isLight} />
           ))
         }
-        <button onClick={() => { switchTheme(!isLight) }}>Switch Theme</button>
+        <button className={isLight ? "light" : "dark"} onClick={() => { switchTheme(!isLight) }}>Switch Theme</button>
       </main>
-    </div>
+    </div >
   );
 }
 

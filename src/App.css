@@ -1,9 +1,18 @@
 .App {
+  min-height: 100vh;
   text-align: center;
 }
 
+.App.light {
+  background-color: #f1f1f1;
+}
+
+.App.dark {
+  background-color: #383838;
+}
+
 .App-header {
-  background-color: #e4e4e4;
+  background-color: #dddddd;
   height: 10vh;
   padding: 10px 70px;
   display: flex;
@@ -19,4 +28,18 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+button {
+  height: 67px;
+}
+
+button.light {
+  background-color: #f4f4f4;
+}
+
+button.dark {
+  background-color: rgb(29, 29, 29);
+  color: white;
+  font-weight: bold;
 }
