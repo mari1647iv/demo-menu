@@ -1,7 +1,7 @@
 .Card {
   width: 100%;
   min-width: 185px;
-  flex-basis: 25%;
+  /* flex-basis: 25%; */
   padding: 20px;
   overflow: hidden;
 
@@ -31,12 +31,4 @@
 
 .Card>a {
   align-self: flex-end;
-}
-
-.minimized {
-  max-height: 25px;
-}
-
-.maximized {
-  max-height: 200px;
 }
