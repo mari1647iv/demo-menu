@@ -23,36 +23,9 @@ function App() {
             <button onClick={()=>{setIsFormVisible(!isFormVisible)}}>Скрыть форму</button>
           </>
       }
-      <CustomButton >
-        Кликов: 
-      </CustomButton>
     </div >
   );
 }
-
-function useCustomState(init)  {
-  if (!init || (typeof(inti)!=="number") || ((4 < init) && (init < 16))) { init = 0}
-  else {init=init}
-  let [state, setState] = useState(init)
-
-  return [state, setState]
-}
-
-function CustomButton({children, initialState}) {
-  let [state, setState] = useCustomState(67)
-
-   function onClick() { setState(state+1) }
-
-   return (
-      <button className="red-button fancy-button" type="button" onClick={onClick}>
-         {children} {state}
-      </button>
-   )
-}
-
-
-
-
 
 
 export default App;
