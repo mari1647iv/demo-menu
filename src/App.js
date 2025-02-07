@@ -14,6 +14,7 @@ function App() {
         <h1>Header</h1>
       </header>
       <Display data={data} isLight={isLight}/>
+      <button className={isLight ? "light" : "dark"} onClick={() => { switchTheme(!isLight) }}>Switch Theme</button>
       <hr style={{width: "95%", border: "1px solid lightgrey"}}/>
       <Form isLight={isLight} />
     </div >
