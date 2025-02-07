@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 
 .App.light {
@@ -47,7 +47,7 @@ button {
   height: 67px;
   padding: 20px;
   min-width: 150px;
-  width: 85%;
+  width: 90%;
 
   font-size: inherit;
   border: 1px solid rgb(206, 206, 206);
